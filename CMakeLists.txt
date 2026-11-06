@@ -16,6 +16,8 @@ find_package(LibTaskManager CONFIG REQUIRED)
 
 if(BUILD_TESTING)
     add_subdirectory(tests)
+else()
+    add_compile_definitions(QT_NO_DEBUG_OUTPUT)
 endif()
 
 add_executable(foreground_booster foregroundbooster.cpp foregroundbooster.h booster_main.cpp)
