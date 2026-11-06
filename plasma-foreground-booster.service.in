@@ -1,6 +1,7 @@
 [Unit]
 Description=Foreground app CPU weight booster
 PartOf=graphical-session.target
+After=plasma-plasmashell.service
 
 [Service]
 Type=dbus
